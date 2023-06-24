@@ -3,8 +3,8 @@ import './App.css';
 import {Counter} from "./components/Counter/Counter";
 import {arrayCounter} from "./redax/redax";
 import {DisplayCounter} from "./components/Counter/DIsplayCounter/DisplayCounter";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {start} from "repl";
+import {HashRouter, Route, Routes} from "react-router-dom";
+
 
 function App() {
     const [state, setState] = useState(arrayCounter.counterInputArray.counterInputStart.value)
@@ -64,7 +64,7 @@ function App() {
     },[])
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="App">
                 <Routes>
                     <Route path={'/'} element={
@@ -88,7 +88,7 @@ function App() {
                     }/>
                 </Routes>
             </div>
-        </BrowserRouter>
+        </HashRouter>
 
     );
 }

@@ -1,0 +1,65 @@
+.errorRed {
+    background-color: deeppink;
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.screen__counter__input {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: aquamarine;
+}
+.screen__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+}
+.screen__button__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    border: 2px solid aqua;
+    border-radius: 20px;
+
+    width: 400px;
+    height: 100px;
+}
+.button {
+    border: none;
+    border-radius: 20px;
+    background-color: aquamarine;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    width: 80px;
+    height: 30px;
+}
+.input {
+    padding: 15px 10px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+
+}
+.input__color {
+    background-color: aquamarine;
+}
+.input:focus {
+    outline: none;
+}
